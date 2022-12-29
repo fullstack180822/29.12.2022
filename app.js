@@ -18,6 +18,10 @@ app.get('/fruit', (req, resp) => {
     resp.end('Banan is my favorite fruit!')
 })
 
+app.get('/my_page', (req, resp) => {
+    resp.sendFile(path.join(__dirname, '/static/page1.html'))
+})
+
 app.get('/movie' , (req, resp) => {
     resp.writeHead(201);
     resp.end('_____ is my favorite movie!')
