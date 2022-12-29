@@ -18,6 +18,11 @@ app.get('/fruit', (req, resp) => {
     resp.end('Banan is my favorite fruit!')
 })
 
+app.get('/movie' , (req, resp) => {
+    resp.writeHead(201);
+    resp.end('_____ is my favorite movie!')
+})
+
 app.listen(port, () => {
     console.log(`Listening to port ${port}`);
 })
